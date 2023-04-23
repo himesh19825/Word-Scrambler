@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='dashboard.css')}}">
+    <link href="https://fonts.googleapis.com/css2?family=Castoro+Titling&display=swap" rel="stylesheet">
+    <title>Player Scores</title>
+  </head>
+  <body>
+    <h1>Player Scores</h1>
+    <table>
+      <thead>
+        <tr>
+          <th>Email</th>
+          <th>Score</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for email, score in scores %}
+          <tr>
+            <td>{{ email }}</td>
+            <td>{{ score }}</td>
+          </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+    <a href="login"><button type="button" id="Log_out">Log Out</button> </a>
+  </body>
+</html>

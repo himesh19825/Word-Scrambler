@@ -1,0 +1,18 @@
+<head>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='quit.css')}}">
+    <link href="https://fonts.googleapis.com/css2?family=Castoro+Titling&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="quit_page">
+    <header>
+<h1>Game Over</h1>
+    </header>
+ <h4>Your score: {{ score }} </h4>
+
+<form action="quit" method="post" >
+    <a href="play_again"><button type="button" id="game">Play Again</button></a>
+    <br>
+    <a href="login"><button type="button" id="log_out">Log Out</button></a>
+</form>
+    </div>
+</body>

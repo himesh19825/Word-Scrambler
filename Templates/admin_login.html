@@ -1,0 +1,18 @@
+<head>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='admin.css')}}">
+    <link href="https://fonts.googleapis.com/css2?family=Castoro+Titling&display=swap" rel="stylesheet">
+</head>
+<div class="admin+page">
+    <header>
+<h2 id="title">Admin Login</h2>
+   </header>
+<form action="admin_data" method="post">
+    <label for="Admin id">Login ID</label>
+    <input type="email" name="admin_email" value="" required>
+    <br>
+    <label for="password">Password</label>
+    <input type="password" name="admin_password" value="" required>
+    <br>
+    <input type="submit" value="Login">
+</form>
+    </div>

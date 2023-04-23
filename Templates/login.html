@@ -1,0 +1,31 @@
+<head>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='login.css')}}">
+    <link href="https://fonts.googleapis.com/css2?family=Castoro+Titling&display=swap" rel="stylesheet">
+</head>
+<h2 class="login_title">User Login</h2>
+
+{% with messages = get_flashed_messages() %}
+    {% if messages %}
+        <ul class="flashes">
+            {% for message in messages %}
+                <li>{{ message }}</li>
+            {% endfor %}
+        </ul>
+    {% endif %}
+{% endwith %}
+
+
+<div class="login_page">
+<form action="user_data" method="post" class="login_form">
+    <label for="id">Login ID</label>
+    <input type="email" name="email" value="" required>
+    <br>
+    <label for="password">Password</label>
+    <input type="password" name="password" value="" required>
+    <br>
+    <input type="submit" name="button" value="Login" />
+<!--    <input type="submit" name="button" value="Admin" />-->
+    <a href="admin_login"><button type="button" id="admin_login">Admin</button></a>
+</form>
+
+</div>

@@ -1,0 +1,27 @@
+<head>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='scramble.css')}}">
+    <link href="https://fonts.googleapis.com/css2?family=Castoro+Titling&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="scramble_page">
+    <header>
+<h1>Word Scramble</h1>
+    </header>
+<p>the Jumbled Word is {{word}}</p>
+
+<h4>Hint: {{hint}} </h4>
+ <div class="scramble_form">
+<form action="word_entered" method="post">
+    <label for="entered_word">Enter the word</label>
+    <input type="text" name="entered_word" value="">
+    <br>
+    <input type="submit" name="button" value="Next" />
+    <input type="submit" name="button" value="Skip" />
+    <input type="submit" name="button" value="Quit" />
+</form>
+ </div>
+<p>Your lives {{lives}} </p>
+<p>Your score{{val_score}}</p>
+    </div>
+</body>
+<!--<a href=""><button></button></a>-->
