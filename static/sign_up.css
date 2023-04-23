@@ -1,0 +1,123 @@
+.signup-page {
+  background-color: #f5f5f5;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 100vh;
+  transition: background-color 0.3s ease-in-out;
+}
+
+/* Style the form container */
+.signup_form {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 100%;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+/* Style the form inputs and labels */
+.signup_form label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: 'Castoro Titling', serif;
+}
+
+.signup_form input[type="email"],
+.signup_form input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  border-radius: 3px;
+  border: 1px solid #cccccc;
+  font-size: 16px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease-in-out;
+}
+
+/* Style the submit button */
+.signup_form input[type="submit"] {
+  background-color: #4CAF50;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 3px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.signup_form input[type="submit"]:hover {
+  background-color: #3e8e41;
+}
+
+/* Style the title */
+.signup_title {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  font-family: 'Castoro Titling', serif;
+  margin-bottom: 40px;
+  margin-top: 40px;
+}
+
+/* Style the message flashes */
+.flashes {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.flashes li {
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: #d32f2f;
+  font-weight: bold;
+  font-family: 'Castoro Titling', serif;
+}
+
+/* Transition effects */
+.signup_form:focus-within {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.signup_form input[type="email"]:focus,
+.signup_form input[type="password"]:focus {
+  border-color: #4CAF50;
+}
+
+.signup_form input[type="submit"]:hover {
+  transform: scale(1.1);
+}
+
+/* Title */
+.signup_title {
+  font-family: 'Castoro Titling', serif;
+  text-align: center;
+  font-size: 36px;
+  color: #333;
+  animation: slide-in 1s ease;
+}
+
+/* Form */
+.signup_form {
+  width: 300px;
+  margin: 20px;
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px #ccc;
+  animation: slide-in 1s ease;
+}
+
+/* Button */
+.signup_form input[type="submit"] {
+  background-color: #333;
+  border: none;
+  color: #fff;
+  padding: 10px 20px
+}

@@ -1,0 +1,79 @@
+
+/* custom font */
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+.head-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+}
+
+.head-container img {
+  width: 30vw;
+  height: 40vh;
+  border-radius: 8%;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.flex-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  margin-top: 2rem;
+}
+
+.flex-item img {
+  margin-right: 2rem;
+}
+
+.home-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.home-buttons a {
+  margin: 1rem;
+}
+
+button {
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  background-color: #FFB6C1;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+
+button:hover {
+  transform: scale(1.1);
+}
+
+#login {
+  background-color: #188918;
+}
+
+#login:hover {
+  background-color:#333;
+}
+
+#sign_up {
+  background-color:#188918;
+}
+
+#sign_up:hover {
+  background-color: #333;
+}
